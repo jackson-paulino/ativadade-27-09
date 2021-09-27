@@ -1,12 +1,9 @@
 import 'dart:io';
 
-// 1) Calcular média de notas
-// 	- utilizar uma lista para armazenar os valores
-// 	- utilizar o reduce
 
 
 
-// 4) Ler uma string e verificar se ela é um palindromo
+
 
 
 
