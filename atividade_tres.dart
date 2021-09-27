@@ -1,10 +1,28 @@
-import 'dart:io';
-
 // 3) Verificar se um número é primo ou não
-    void main(){
+import 'dart:io';
+import 'dart:math';
 
-  var valor = stdin.readLineSync();
- stdout.writeln('Informe o ${(valor)} numero?');
- print(valor);
+bool CheckPrime(int num){
+  if(num<=1){
+     return false;
+  }
+  
+  for (int i = 2;i<=sqrt(num);i++){
+    if(num%i == 0){
+      return false;
     }
+  }
+  return true;
+}
 
+void main(){
+  
+   print('Digite um número');
+   int? num = int.parse(stdin.readLineSync()!); 
+  print('$num');
+  if(CheckPrime(num)){
+           print('$num é primo');
+  }else{
+    print('$num não é primo');
+  }
+}

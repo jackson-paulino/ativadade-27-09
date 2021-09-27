@@ -2,7 +2,13 @@
 // 	Ex:
 // 	Entrada: meu nome é Matheus
 // 	Resultado: Matheus é meu nome
+import 'dart:io';
 
-class AtividadeCinco{
+void main (){
+  print('Digite uma frase');
+  String frase;
+  frase = stdin.readLineSync()!; 
+  var teste = frase.split('').reversed.join('');
+  print('a frase invertida é $teste');
 
 }
